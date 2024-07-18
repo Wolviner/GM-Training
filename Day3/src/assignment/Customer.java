@@ -2,24 +2,20 @@ package assignment;
 
 
 class Customer extends User {
-    private String customerLevel;
+    
 
-    public Customer(String name, int id, String customerLevel) {
+    public Customer(String name, int id) {
         super(name, id);
-        this.customerLevel = customerLevel;
+        
     }
 
-    public String getCustomerLevel() {
-        return customerLevel;
-    }
+   
 
-    public void setCustomerLevel(String customerLevel) {
-        this.customerLevel = customerLevel;
-    }
+ 
 
     @Override
     public void getDetails() {
-        System.out.println("Customer Name: " + getName() + ", ID: " + getId() + ", Level: " + customerLevel);
+        System.out.println("Customer Name: " + getName() + ", ID: " + getId());
     }
 
     @Override
