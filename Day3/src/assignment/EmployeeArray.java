@@ -2,45 +2,45 @@ package assignment;
 
 
 
-class EmployeeArray {
+class EmployeeDetails {
     private String name;
     private int id;
-    private double salary;
-    private double grossSalary;
-    private double netSalary;
+    private double sal;
+    private double grosssal;
+    private double netsal;
 
-    public EmployeeArray(String name, int id, double salary) {
+    public EmployeeArray(String name, int id, double sal) {
         this.name = name;
         this.id = id;
-        this.salary = salary;
+        this.sal = sal;
         calculateSalaries();
     }
 
-    private void calculateSalaries() {
+    private void calculateSal() {
         double hra, ta, a, it;
         
-        if (salary >= 70) {
-            hra = 0.15 * salary;
-            ta = 0.10 * salary;
-            a = 0.10 * salary;
-            it = 0.11 * salary;
-        } else if (salary >= 50) {
-            hra = 0.13 * salary;
-            ta = 0.08 * salary;
-            a = 0.08 * salary;
-            it = 0.09 * salary;
-        } else if (salary >= 30) {
-            hra = 0.10 * salary;
-            ta = 0.07 * salary;
-            a = 0.07 * salary;
-            it = 0.08 * salary;
+        if (sal >= 70) {
+            hra = 0.15 * sal;
+            ta = 0.10 * sal;
+            a = 0.10 * sal;
+            it = 0.11 * sal;
+        } else if (sal >= 50) {
+            hra = 0.13 * sal;
+            ta = 0.08 * sal;
+            a = 0.08 * sal;
+            it = 0.09 * sal;
+        } else if (sal >= 30) {
+            hra = 0.10 * sal;
+            ta = 0.07 * sal;
+            a = 0.07 * sal;
+            it = 0.08 * sal;
         } else {
             hra = ta = a = 0.0;
             it = 0.0;
         }
 
-        grossSalary = salary + hra + ta + a;
-        netSalary = grossSalary - it;
+        grosssal = sal + hra + ta + a;
+        netsal = grosssal - it;
     }
 
     public String getName() {
@@ -51,15 +51,15 @@ class EmployeeArray {
         return id;
     }
 
-    public double getSalary() {
-        return salary;
+    public double getsal() {
+        return sal;
     }
 
-    public double getGrossSalary() {
-        return grossSalary;
+    public double getGrosssal() {
+        return grosssal;
     }
 
-    public double getNetSalary() {
-        return netSalary;
+    public double getNetsal() {
+        return netsal;
     }
 }
