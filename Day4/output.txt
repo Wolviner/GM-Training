@@ -1,0 +1,3 @@
+Thi* i* a *ample paragraph.
+It contain* multiple *entence*.
+Each *entence i* *eparated by a newline.
