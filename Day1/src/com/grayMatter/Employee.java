@@ -3,7 +3,7 @@ package com.grayMatter;
 import java.util.Scanner;
 
 //POJO --plain old java object when it has no main class and 
-//Drivef class --when it has main class
+//Driver class --when it has main class
 public class Employee {
 
 

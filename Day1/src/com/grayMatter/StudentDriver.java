@@ -19,6 +19,12 @@ public class StudentDriver {
 		System.out.println(st1.getM1());
 		System.out.println(st1.getM2());
 		System.out.println(st1.getM3());
+		
+		Student st2=new Student("Mia",77,45,76,67);
+		System.out.println(st2);
+		
+		Student st3=new Student("Mani",99);
+		System.out.println(st3);
 
 	}
 

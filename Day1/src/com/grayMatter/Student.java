@@ -6,10 +6,13 @@ private String studName;
 private int id;
 private int m1,m2,m3;
 
+
+//No parameter constructor
 public Student() {
-	super();
+	super();//Constructor of object class is invoked (it has to be written first)
 }
 
+//All parameter constr.
 public Student(String studName, int id, int m1, int m2, int m3) {
 	super();
 	this.studName = studName;
@@ -19,6 +22,14 @@ public Student(String studName, int id, int m1, int m2, int m3) {
 	this.m3 = m3;
 }
 
+//Some parameter constr.
+
+public Student(String studName, int id) {
+	super();
+	this.studName = studName;
+	this.id = id;
+	this.m1=this.m2=this.m3=100;
+}
 
 public String getStudName() {
 	return studName;
