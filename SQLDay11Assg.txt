@@ -1,0 +1,8 @@
+create table Persons (id int(10) primary key,ename varchar(15),age int(10),mobile varchar(15),mail varchar(30));
+select * from persons;
+insert into persons values(1,"Mona",25,99988,"mona@gmail.com");
+insert into persons values(3,"Kannan",12,10862344,"kannan@gmail.com");
+insert into persons values(999,"Manda",18,1045452344,"mandan@gmail.com");
+insert into persons values(1999,"Manday",189,1045452344,"manday@gmail.com");
+select * from persons;
+drop table persons;
