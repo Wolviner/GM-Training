@@ -1,0 +1,9 @@
+{
+    var a=99;
+let i=5;//let is block scope ,var is in function scope
+console.log(i);
+const pi=3.14;// const cant change their value and its scope is within the block
+console.log(pi);
+}
+console.log(a);
+console.log(i);

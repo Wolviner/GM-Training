@@ -1,0 +1,163 @@
+/* General Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: ease-out .3s;
+}
+
+.mini-logo {
+    width: 50px; 
+    height: auto; 
+}
+
+/* Sign Up Button */
+.btn-signup {
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #b00020;
+    color: #b00020;
+    font-size: 14px;
+    font-family: "Merriweather Sans", sans-serif;
+    text-transform: uppercase;
+    width: 147px;
+    padding: 9px 0 6px 0;
+    margin-right: 5px;
+}
+
+/* Subscribe Button */
+.btn-subscribe {
+    background: #b00020;
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* Free Trial Button */
+.btn-free-trial {
+    background: none;
+    border: 0;
+    color: #000;
+    font-weight: bold;
+    width: max-content;
+    height: auto;
+    padding: 0;
+    line-height: normal;
+    margin-right: 24px;
+    position: relative;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Merriweather Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+/* Navbar Adjustments */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: color .15s;
+}
+
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(97, 79, 79);
+    text-align: justify;
+    line-height: 1.05;
+}
+
+#title {
+    font-size: 24px;
+    color: black;
+    font-weight: 900;
+}
+
+.cls1 {
+    font-size: 17px;
+}
+
+/* Navigation Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu div {
+    margin: 0 20px;
+    position: relative;
+    text-align: center;
+    font-weight: 900;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.menu hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+}
+
+/* Advertisement Image */
+.advertisement-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Content Section Styles */
+.content-section {
+    margin-top: 20px;
+}
+
+.content-column {
+    margin-bottom: 20px;
+}
+
+.news-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+
+
+.navbar-collapse {
+    margin-left: 530px;
+}
+
+.paper {
+    padding-right: 70px;
+}

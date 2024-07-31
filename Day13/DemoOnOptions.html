@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="options">Choose an option</label>
+        <select id="options" name="options">
+            <option value="Option1" name="Options">Option 1</option>
+            <option value="Option2" name="Options">Option 2</option>
+            <option value="Option3" name="Options">Option 3</option>
+        </select>
+        <button type="button" onclick="readSelectOption()">Submit</button>
+    </form>
+    <script>
+        function readSelectOption(){
+            // let selectElement = document.getElementById('options');
+            // let selectedOption = selectElement.value;
+            // console.log(selectedOption);
+
+            let optstxt=document.getElementsByName('Options')
+            for(var i=0;i<optstxt.length;i++)
+                if(optstxt[i].selected)
+                    console.log(optstxt[i].value)
+        }
+    </script>
+</body>
+</html>
+

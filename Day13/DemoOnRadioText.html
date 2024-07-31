@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="Gender">Gender</label>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female
+        <button type="button" onclick="readRadioButtons()">Submit</button>
+    </form>
+    <script>
+        function readRadioButtons(){
+            let radiotxt=document.getElementsByName('Gender')
+            for(var i=0;i<radiotxt.length;i++)
+            if(radiotxt[i].checked)
+                console.log(radiotxt[i].value)
+        }
+    </script>
+</body>
+</html>
