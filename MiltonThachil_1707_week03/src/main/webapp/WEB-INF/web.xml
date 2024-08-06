@@ -1,0 +1,77 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.grayMatter.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignupServlet</servlet-name>
+  	<display-name>SignupServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.grayMatter.SignupServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>PlaceOrderServlet</servlet-name>
+  	<display-name>PlaceOrderServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.grayMatter.PlaceOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<display-name>LogoutServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.grayMatter.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RoleServlet</servlet-name>
+  	<display-name>RoleServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.grayMatter.RoleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<display-name>AdminServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.grayMatter.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OrderListServlet</servlet-name>
+  	<display-name>OrderListServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.grayMatter.OrderListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignupServlet</servlet-name>
+  	<url-pattern>/SignupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PlaceOrderServlet</servlet-name>
+  	<url-pattern>/PlaceOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RoleServlet</servlet-name>
+  	<url-pattern>/RoleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>OrderListServlet</servlet-name>
+  	<url-pattern>/OrderListServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

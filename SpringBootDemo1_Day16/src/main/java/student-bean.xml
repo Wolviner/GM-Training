@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<!-- while doing autowiring through constructor  and bean class not having 
+any constructor then spring container will perform constructor injection 
+through default constructor and then uses setters to inject value -->
+ 
+  
+ <bean id="student" class="com.grayMatter.beans.Student" scope="prototype">
+        <constructor-arg name="name" value="Moas"/>
+        <constructor-arg name="id" value="101"/>
+        <constructor-arg name="mobile" value="346238423742"/>
+        <constructor-arg name="dep" ref="department"/>
+    </bean>
+    
+    <bean id="student1" class="com.grayMatter.beans.Student" autowire="constructor">
+        <constructor-arg name="name" value="Pomas"/>
+        <constructor-arg name="id" value="105000"/>
+        <constructor-arg name="mobile" value="12314342354543"/>
+        <constructor-arg name="dep" ref="department"/>
+    </bean>
+    
+   <bean id="department" class="com.grayMatter.beans.Department">
+    
+    <constructor-arg name="depid" value="150003"/>
+    
+    <constructor-arg name="depname">
+        <set>
+            <value>item1</value>
+            <value>item2</value>
+            <value>item3</value>
+            <value>item4</value>
+        </set>
+    </constructor-arg>
+    
+</bean>
+    
+    
+        <bean id="student2" class="com.grayMatter.beans.Student" autowire="byName">
+        <constructor-arg name="name" value="Sasna"/>
+        <constructor-arg name="id" value="7687"/>
+        <constructor-arg name="mobile" value="99997872354543"/>
+        <constructor-arg name="dep" ref="department2"/>
+    </bean>
+    
+   <bean id="department2" class="com.grayMatter.beans.Department">
+    
+    <constructor-arg name="depid" value="150003"/>
+    
+    <constructor-arg name="depname">
+        <set>
+            <value>item56</value>
+            <value>item3434</value>
+            <value>item67</value>
+            <value>item4</value>
+        </set>
+    </constructor-arg>
+    
+</bean>
+
+<!--  <bean id="student3" class="com.grayMatter.beans.Student" autowire="byName">
+        <constructor-arg name="name" value="Sasna"/>
+        <constructor-arg name="id" value="7687"/>
+        <constructor-arg name="mobile" value="99997872354543"/>
+        <constructor-arg name="dep">
+        <set>
+            <ref bean="department"/>
+            <ref bean="department2"/>
+           
+        </set>
+    </constructor-arg>
+    </bean>-->
+    
+    </beans>

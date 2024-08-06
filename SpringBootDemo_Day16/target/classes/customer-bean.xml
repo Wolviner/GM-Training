@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Uncomment and modify bean definitions as needed -->
+    <!--
+    <bean id="cust" class="com.grayMatter.beans.Customer">
+        <constructor-arg name="name" value="Moas"/>
+        <constructor-arg name="id" value="101"/>
+        <constructor-arg name="mobile" value="346238423742"/>
+    </bean>
+    -->
+    <bean id="cust1" class="com.grayMatter.beans.Customer">
+        <property name="name" value="Gord"/>
+        <property name="id" value="502"/>
+        <property name="mobile" value="823432"/>
+    </bean>
+    
+
+    <context:property-placeholder location="classpath:data.properties"/>
+
+    <bean id="cust2" class="com.grayMatter.beans.Customer">
+        <property name="name" value="${Customer.name}"/>
+        <property name="id" value="${Customer.id}"/>
+        <property name="mobile" value="${Customer.mobile}"/>
+    </bean>
+    
+    
+     <bean id="cust" class="com.grayMatter.beans.Customer" autowire="constructor">
+        <constructor-arg name="name" value="Moas"/>
+        <constructor-arg name="id" value="101"/>
+        <constructor-arg name="mobile" value="346238423742"/>
+        <constructor-arg name="order" ref="ord"/>
+    </bean>
+    
+   <bean id="ord" class="com.grayMatter.beans.Order">
+    
+    <constructor-arg name="orderId" value="56"/>
+    
+    <constructor-arg name="itemList">
+        <list>
+            <value>item1</value>
+            <value>item2</value>
+            <value>item3</value>
+            <value>item4</value>
+        </list>
+    </constructor-arg>
+    
+</bean>
+
+
+
+</beans>
